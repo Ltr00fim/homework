@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Навыки</title>
+    </head>
+    <body>
+        <h1>Кандитаты:</h1>
+        <pre>
+            {% for candidate in candidates %}
+                Имя кандидата - {{candidate['name']}}
+                Позиция кандидата - {{candidate['position']}}
+                Навыки через запятую - {{candidate['skills']}}
+            {% endfor %}
+        </pre>
+    </body>
+</html>
